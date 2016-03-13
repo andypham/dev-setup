@@ -126,6 +126,8 @@ brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
 
+brew install emacs
+
 # Lxml and Libxslt
 brew install libxml2
 brew install libxslt
@@ -147,7 +149,7 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text3
+#brew cask install --appdir="/Applications" sublime-text3
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
@@ -155,7 +157,7 @@ brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
+#brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
