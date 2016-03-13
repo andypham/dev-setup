@@ -126,7 +126,7 @@ brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
 
-brew install emacs
+brew install emacs --srgb --with-cocoa
 
 # Lxml and Libxslt
 brew install libxml2
