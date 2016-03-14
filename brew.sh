@@ -56,6 +56,9 @@ brew install rbenv
 LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
+#node
+brew install nvm
+
 # Install more recent versions of some OS X tools.
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
