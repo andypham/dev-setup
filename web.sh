@@ -18,8 +18,6 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-brew install nvm
-
 # Remove outdated versions from the cellar.
 brew cleanup
 
