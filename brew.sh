@@ -94,7 +94,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install homebrew/x11/xpdf
+brew install xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -105,7 +105,6 @@ brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
-brew install hub
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -135,7 +134,6 @@ heroku update
 
 # Install Cask
 brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
@@ -148,6 +146,7 @@ brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
+brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" macdown
 
 # Misc casks
@@ -157,7 +156,6 @@ brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 
