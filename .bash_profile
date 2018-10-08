@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$HOME/projects/google-cloud-sdk/bin:$PATH";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -50,3 +50,12 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 #NVM
 export NVM_DIR=$HOME/.nvm
 [ -s "$(brew --prefix nvm)/nvm.sh" ] && . $(brew --prefix nvm)/nvm.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+
+# IPython Notebook Spark integration, added by aws.sh
+export SPARK_HOME='/usr/local/Cellar/apache-spark/1.4.1'
+# Appending pyspark-shell is needed for Spark 1.4+
+export PYSPARK_SUBMIT_ARGS='--master local[2] pyspark-shell'
+

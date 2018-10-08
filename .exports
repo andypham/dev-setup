@@ -1,5 +1,5 @@
 # Make vim the default editor.
-export EDITOR='emacsclient -nw';
+export EDITOR='emacs';
 
 # Enable persistent REPL history for `node`.
 NODE_REPL_HISTORY_FILE=~/.node_history;
@@ -24,3 +24,13 @@ export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
+
+# disabled Perl SSL host check
+export PERL_LWP_SSL_VERIFY_HOSTNAME=0;
+
+# python virtualenv
+export PROJECT_HOME=$HOME/Projects
+
+export JAVA_HOME="`/usr/libexec/java_home -v 1.8`"
+
+export DYLD_LIBRARY_PATH="/usr/local/Cellar/mysql/5.7.21/lib:$DYLD_LIBRARY_PATH"

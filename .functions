@@ -125,9 +125,11 @@ function gz() {
 # Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
 function json() {
     if [ -t 0 ]; then # argument
-        python -mjson.tool <<< "$*" | pygmentize -l javascript;
+        #python -mjson.tool <<< "$*" | pygmentize -l javascript;
+        jq -C . <<< "$*" | less -R
     else # pipe
-        python -mjson.tool | pygmentize -l javascript;
+        jq -C . | less -R
+        #python -mjson.tool | pygmentize -l javascript;
     fi;
 }
 
@@ -243,4 +245,28 @@ function o() {
 # small enough for one screen.
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
+
+function str_replace() {
+    local string1=$1;
+    local string2=$2;
+    local path=$3;
+
+    grep -rl $string1 $path | xargs sed -i "s/$string1/$string2/g";
+}
+
+function pidof() {
+    ps ax | grep $1 | grep -v grep | awk '{print $1}'
+}
+
+function os() {
+  if [ $# -eq 1 ]; then
+      echo "$@" | osqueryi;
+	else
+			echo "$2" | osqueryi $1;
+  fi;
+}
+
+function anybar() {
+    echo -n $1 | nc -4u -w0 localhost ${2:-1738};
 }
