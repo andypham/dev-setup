@@ -119,8 +119,7 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
-
-brew install emacs --srgb --with-cocoa
+brew install tmux
 
 # Lxml and Libxslt
 brew install libxml2
@@ -144,6 +143,7 @@ brew cask install --appdir="~/Applications" xquartz
 # Development tool casks
 #brew cask install --appdir="/Applications" sublime-text3
 brew cask install --appdir="/Applications" atom
+brew install emacs --srgb --with-cocoa
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" heroku-toolbelt
