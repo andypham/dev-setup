@@ -121,6 +121,7 @@ brew install pkg-config libffi
 brew install pandoc
 brew install tmux
 brew install reattach-to-user-namespace
+brew install multimarkdown
 
 # Lxml and Libxslt
 brew install libxml2
